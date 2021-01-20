@@ -1,0 +1,290 @@
+/* CSS RESET */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* NAVIGATION LOGO */
+#navbar{
+    display: flex;
+    position: sticky;
+    top: 0px;
+}
+#navbar::before{
+    content: '';
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+.logo{
+    margin: 0px 10px;
+
+}
+.logo img{
+    height: 65px;
+    margin: 11px 17px;
+}
+/* NAVIGATION BAR */
+#navbar ul{
+    display: flex;
+    align-items: center;
+}
+#navbar ul li{
+    list-style: none;
+    font-family: 'Bree Serif', serif;
+}
+#navbar ul a{
+    text-decoration: none;
+    padding: 5px 20px;
+    color: white;
+    font-size: 1.3rem;
+}
+#navbar ul a:hover{
+    background-color: white;
+    color: black;
+    border-radius: 23px;
+}
+/* HOME SECTION */
+#home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 549px;
+    font-family: 'Baloo 2', cursive;
+}
+#home::before{
+    content: '';
+    background: url('../pp.jpg') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 650px;
+    z-index: -1;
+    opacity: 0.90;
+    top: 0px;
+}
+.title h1{
+    padding: 24px 0px;
+    font-size: 3.2rem;
+}
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px 200px;
+    color: white;
+}
+.title p{
+    font-size: 1.23rem;
+    padding: 10px 30px;
+}
+/* SERVICES SECTION */
+
+#services{
+    background-color: #d4e4ff;
+}
+#services h1{
+    font-family: 'Bree Serif', serif;
+    padding-top: 20px;
+}
+#team{
+    padding: 15px;
+    margin: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    justify-content: center;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 25px;
+    margin: 16px 17px;
+    align-items: center;
+    justify-content: center;
+    width: 325px;
+    box-shadow: 2px 2px 25px #b99c9c;
+    border-radius: 10px;
+    background-color: aliceblue;
+    cursor: pointer;
+    transition: 1s ease;
+}
+.item:hover{
+    background-color: #77a2e8;
+
+}
+.item img{
+    padding: 15px 5px;
+    height: 90px;
+    display: block;
+    margin: auto;
+    border-radius: 60px;
+}
+
+.item p{
+    text-align: center;
+    padding: 10px 30px;
+
+}
+.item h3{
+    text-align: center;
+    font-size: 2rem;
+    padding: 3px 3px;
+}
+/* ABOUT ME */
+#main{
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+
+}
+.about{
+    padding: 40px;
+    margin: 0px 50px;
+    
+}
+.about img{
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 55px #6ea6ea;
+
+}
+.contant{
+    display: flex;
+    flex-direction: column;
+    padding: 80px 40px;
+    line-height: 2;
+}
+.contant h1{
+    font-size: 2.9rem;
+}
+.contant strong{
+    font-size: 1.3rem;
+}
+.basic-info li, a{
+    list-style: none;
+    text-decoration: none;
+    padding: 10px 0px;
+    font-size: 1.3rem;
+}
+.basic-info li a{
+    color: #777777;
+}
+.personal-social li{
+    list-style: none;
+    margin: 25px 10px;
+    padding: 5px 13px;
+}
+.personal-social li:hover{
+    background: blueviolet;
+    color: white;
+    border-radius: 12px;
+    
+}
+.personal-social{
+    display: flex;
+}
+/* CONTACT US */
+#contact-us{
+    position: relative;
+    height: 700px;
+}
+#contact-us::before{
+    content: '';
+    background: url('../ff.jpg') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.90;
+    top: 0px;
+    
+}
+#main-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Baloo 2', cursive;
+
+}
+#main-box input,
+#main-box textarea{
+    width: 100%;
+    font-size: 1.2rem;
+    padding: .5rem;
+    border-radius: 10px;
+
+}
+#main-box form{
+    width: 40%;
+
+}
+#main-box label{
+    font-size: 1.6rem;
+
+}
+
+
+/* FOOTER SECTION */
+
+#footer{
+    background: black;
+    color: white;
+    font-family: 'Bree Serif', serif;
+    
+}
+.foot strong{
+    font-size: 0.9rem;
+    display: block;
+    text-align: center;
+}
+.foot{
+    padding: 6px 0px;
+}
+
+/* UTILITY CLASSES */
+.btn{
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: 4px solid orange;
+    border-radius: 9px;
+    margin: 15px 0px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #f74a4a;
+    color: white;
+}
+ .h-primary{
+    padding: 15px;
+    font-size: 3.2rem;
+    font-family: 'Bree Serif', serif;
+}
+.center{
+    text-align: center;
+}
+.detail{
+    line-height: 1.5;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+    margin-top: 11px;
+    color: #777777;
+}
+.ico{
+    font-size: 1.5rem;
+    margin-right: 25px;
+    color: blue;
+}
+.fab{
+    font-size: 1.8rem;
+
+}

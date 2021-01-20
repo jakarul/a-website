@@ -1,0 +1,114 @@
+/* ............DESKTOP DEVICES............. */
+@media (min-width:1024px){
+   
+}
+
+/* .............TABLET DEVICES.............. */
+
+@media (min-width:501px) and (max-width:1023px){
+   
+    #navbar{
+        justify-content: center;
+    }
+    .title{
+        padding: 20px 20px;
+    }
+    .item{
+        padding: 12px 6px;
+    }
+    #main{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+/* .............MOBILE PHONE............ */
+@media (max-width:500px){
+
+    #navbar{
+        flex-direction: column;
+    align-items: center;
+    }
+    #navbar::before{
+        height: 110%;
+    }
+    #navbar ul a {
+        padding: 5px 10px;
+        font-size: 1rem;
+        
+    }
+    #home{
+        height: 500px;
+    }
+    .title{
+        padding: 5px 5px;
+    }
+    .title h1 {
+        padding: 10px 0px;
+        font-size: 2rem;
+    }
+    .btn {
+    font-size: .8rem;
+        
+    }
+    #services h1{
+        font-size: 2.2rem;
+    }
+    .item{
+        width: 285px;
+        padding: 0px 0px;
+    }
+    .item h3{
+        font-size: 1.3rem;
+    }
+    #about-me h1{
+        font-size: 2.2rem;
+    }
+    #main {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .about img {
+        width: 300px;
+    }
+    .contant {
+        padding: 15px 10px;
+        display: flex;
+        flex-direction: column;
+        line-height: 2;
+        align-items: center;
+        justify-content: center;
+    }
+    .basic-info li a{
+        font-size: 1rem;
+        padding: 0px;
+    }
+    .basic-info li{
+        font-size: 1.2rem;
+        padding: 0px;
+    }
+    .personal-social li {
+        margin: 15px 10px;
+        padding: 5px 5px;
+    }
+    #contact-us {
+        height: 500px;
+    }
+    #main-box label {
+        font-size: 1rem;
+    }
+    #main-box input, #main-box textarea {
+        font-size: 0.9rem;
+    }
+    #main-box .btn{
+        margin: 0px 10px;
+    }
+    .foot strong{
+        font-size: 0.6rem;
+    }
+    
+    
+}
+/* ............UTILITY CLASS.............. */
